@@ -110,9 +110,62 @@ export default function TermsPage() {
               <li>All payments are processed securely through <strong className="text-white">Stripe</strong>. We do not store credit card information.</li>
               <li>Subscriptions renew automatically at the end of each billing period unless cancelled.</li>
               <li>You may cancel your subscription at any time using the /cancel command. Access continues until the end of the current billing period.</li>
-              <li>We do not offer refunds for partial billing periods. By subscribing, you acknowledge this policy.</li>
               <li>We reserve the right to change pricing with 30 days&apos; notice. Existing subscribers will be grandfathered at their current rate for one additional billing cycle.</li>
               <li>Free trial periods, if offered, automatically convert to paid subscriptions unless cancelled before the trial ends.</li>
+            </ul>
+          </section>
+
+          {/* 5.5 */}
+          <section>
+            <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+              <span className="text-cyan-500 text-sm font-mono">05.1</span> No Refund Policy
+            </h2>
+            <div className="card p-5 border-red-500/20 bg-red-500/[0.03] mb-4">
+              <p className="text-red-200/90 text-sm font-medium">⚠️ ALL SALES ARE FINAL — STRICT NO REFUND POLICY</p>
+            </div>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong className="text-white">All purchases are final and non-refundable.</strong> By subscribing, you explicitly acknowledge and agree that no refunds will be issued under any circumstances, including but not limited to:</li>
+              <ul className="list-disc pl-5 space-y-1.5 mt-2 text-zinc-400">
+                <li>Dissatisfaction with picks, predictions, or analysis results.</li>
+                <li>Losing bets placed based on our content.</li>
+                <li>Failure to use the Service during your billing period.</li>
+                <li>Partial use of a subscription period.</li>
+                <li>Forgetting to cancel before renewal.</li>
+                <li>Changes to features, pricing, or availability.</li>
+                <li>Technical issues, outages, or downtime.</li>
+                <li>Disagreement with the AI&apos;s analysis or selections.</li>
+              </ul>
+              <li>We provide a <strong className="text-white">free tier</strong> specifically so you can evaluate the Service before committing to a paid plan. By upgrading to a paid plan, you confirm that you have evaluated the free tier and are satisfied with the Service.</li>
+              <li>You have the ability to <strong className="text-white">cancel at any time</strong> using the /cancel command. Cancellation takes effect at the end of your current billing period — you retain access until then. This is your remedy if you are unsatisfied.</li>
+              <li>We are an <strong className="text-white">information and entertainment service</strong>, not a gambling service. The outcome of sporting events is inherently unpredictable, and unfavorable pick results are not grounds for a refund.</li>
+              <li>By completing your purchase, you <strong className="text-white">expressly waive</strong> any right to a refund, chargeback, or payment reversal for the subscription fees charged.</li>
+            </ul>
+          </section>
+
+          {/* 5.6 */}
+          <section>
+            <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+              <span className="text-cyan-500 text-sm font-mono">05.2</span> Chargebacks &amp; Payment Disputes
+            </h2>
+            <div className="card p-5 border-red-500/20 bg-red-500/[0.03] mb-4">
+              <p className="text-red-200/90 text-sm font-medium">🚫 FILING A CHARGEBACK IS A VIOLATION OF THESE TERMS</p>
+            </div>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>You agree <strong className="text-white">not to file a chargeback, payment dispute, or payment reversal</strong> with your bank, credit card company, or payment provider for any charges from AI Parlay Picks.</li>
+              <li>If you have a billing concern, you agree to <strong className="text-white">contact us first</strong> through our support bot (@parlaypickssupportbot) before taking any action with your payment provider. We commit to responding within 48 hours.</li>
+              <li>In the event a chargeback or dispute is filed:
+                <ul className="list-disc pl-5 space-y-1.5 mt-2 text-zinc-400">
+                  <li>Your account will be <strong className="text-white">immediately and permanently terminated</strong>.</li>
+                  <li>All access to paid features will be revoked without prior notice.</li>
+                  <li>We will submit evidence to contest the dispute, including: your acceptance of these Terms (with timestamp), your usage logs, your IP address, your Telegram account information, delivery confirmation of the Service, and all communications.</li>
+                  <li>You may be liable for an additional <strong className="text-white">administrative fee of $25.00</strong> to cover dispute processing costs, which will be charged to your payment method on file or invoiced separately.</li>
+                  <li>We reserve the right to pursue collections and/or legal action for fraudulent chargebacks.</li>
+                  <li>Your information may be shared with chargeback fraud prevention databases.</li>
+                </ul>
+              </li>
+              <li>We maintain <strong className="text-white">comprehensive usage logs</strong> including: every command you execute, every pick generated, timestamps of all interactions, your subscription history, IP addresses, and Telegram account metadata. These records serve as evidence that the Service was delivered as described.</li>
+              <li>By using the Service, you acknowledge that we <strong className="text-white">deliver a digital information service instantly</strong> upon subscription activation. Because the Service is immediately accessible and consumable, the standard &ldquo;product not received&rdquo; or &ldquo;product not as described&rdquo; chargeback reasons do not apply.</li>
+              <li>Repeated or fraudulent chargebacks may be reported to relevant authorities and fraud prevention networks.</li>
             </ul>
           </section>
 
