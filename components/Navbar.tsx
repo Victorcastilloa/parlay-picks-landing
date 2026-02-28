@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const BOT_URL = "https://t.me/ParlayPicksBot";
+const BOT_URL = "https://t.me/parlay_picks_bot";
 
 const links = [
   { label: "How It Works", href: "#how-it-works" },

@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const BOT_URL = "https://t.me/ParlayPicksBot";
+const BOT_URL = "https://t.me/parlay_picks_bot";
 
 export default function Footer() {
   const ref = useRef(null);

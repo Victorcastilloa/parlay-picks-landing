@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const BOT_URL = "https://t.me/ParlayPicksBot";
+const BOT_URL = "https://t.me/parlay_picks_bot";
 
 export default function Hero() {
   return (
