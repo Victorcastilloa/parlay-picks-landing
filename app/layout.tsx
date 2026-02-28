@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     title: "AI Parlay Picks — AI-Powered Sports Betting Picks",
     description:
       "Real-time odds from 40+ bookmakers. Claude AI analysis. Delivered straight to your Telegram.",
+    images: ["/twitter-image.png"],
   },
   robots: { index: true, follow: true },
 };

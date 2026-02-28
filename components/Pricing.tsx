@@ -20,38 +20,42 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 sm:py-32">
+    <section id="pricing" className="py-32 sm:py-40">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-[13px] font-semibold text-cyan-400 mb-3 tracking-wide uppercase">Pricing</p>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-3">Start free, upgrade when ready</h2>
+        <div className="text-center mb-20">
+          <p className="text-[13px] font-semibold text-cyan-400 mb-4 tracking-wide uppercase">Pricing</p>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">Start free, upgrade when ready</h2>
           <p className="text-zinc-500 text-sm max-w-md mx-auto">No lock-in. Cancel anytime. First picks are on us.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {plans.map((p, i) => (
-            <div key={p.name} className={`fade-up delay-${i+1} rounded-xl p-7 flex flex-col relative overflow-hidden ${
+            <div key={p.name} className={`fade-up delay-${i+1} rounded-xl p-8 flex flex-col relative overflow-hidden ${
               p.highlight ? "bg-gradient-to-b from-cyan-500/[0.06] to-transparent border border-cyan-500/20" : "card"
             }`}>
               {p.highlight && <span className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />}
-              {p.highlight && <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-2.5 py-0.5 rounded-full mb-4 self-start">Popular</span>}
+              {p.highlight && (
+                <span className="inline-block text-[10px] font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20 px-3 py-1 rounded-full mb-5 self-start">
+                  Popular
+                </span>
+              )}
 
-              <h3 className="text-sm font-medium text-zinc-400 mb-1">{p.name}</h3>
-              <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-3xl font-bold text-white">{p.price}</span>
+              <h3 className="text-sm font-medium text-zinc-400 mb-1.5">{p.name}</h3>
+              <div className="flex items-baseline gap-1 mb-2">
+                <span className="text-4xl font-bold text-white">{p.price}</span>
                 <span className="text-sm text-zinc-600">{p.period}</span>
               </div>
-              <p className="text-[13px] text-zinc-600 mb-6">{p.desc}</p>
-              <div className="h-px bg-white/[0.05] mb-5" />
+              <p className="text-[13px] text-zinc-600 mb-7">{p.desc}</p>
+              <div className="h-px bg-white/[0.05] mb-6" />
 
-              <ul className="space-y-2.5 mb-7 flex-1">
+              <ul className="space-y-3 mb-8 flex-1">
                 {p.features.map(f => (
-                  <li key={f} className="flex items-start gap-2.5 text-[13px]"><Check /><span className="text-zinc-400">{f}</span></li>
+                  <li key={f} className="flex items-start gap-3 text-[13px]"><Check /><span className="text-zinc-400">{f}</span></li>
                 ))}
               </ul>
 
               <a href={BOT} target="_blank" rel="noopener noreferrer"
-                className={`block w-full py-2.5 rounded-lg text-center text-sm font-medium transition-all ${
+                className={`block w-full py-3 rounded-lg text-center text-sm font-medium transition-all ${
                   p.highlight ? "btn-primary" : "btn-secondary"
                 }`}>
                 {p.cta} →
@@ -59,7 +63,7 @@ export default function Pricing() {
             </div>
           ))}
         </div>
-        <p className="text-center text-[11px] text-zinc-700 mt-8">All payments through Stripe. Cancel with one click.</p>
+        <p className="text-center text-[11px] text-zinc-700 mt-10">All payments through Stripe. Cancel with one click.</p>
       </div>
     </section>
   );

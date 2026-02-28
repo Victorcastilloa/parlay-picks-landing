@@ -25,10 +25,10 @@ function Item({ faq }: { faq: typeof faqs[0] }) {
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 sm:py-32">
+    <section id="faq" className="py-32 sm:py-40">
       <div className="max-w-2xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <p className="text-[13px] font-semibold text-cyan-400 mb-3 tracking-wide uppercase">FAQ</p>
+        <div className="text-center mb-16">
+          <p className="text-[13px] font-semibold text-cyan-400 mb-4 tracking-wide uppercase">FAQ</p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Common questions</h2>
         </div>
         <div>{faqs.map((f, i) => <Item key={i} faq={f} />)}</div>

@@ -9,19 +9,19 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 sm:py-32 relative">
+    <section id="features" className="py-32 sm:py-40 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/[0.015] to-transparent pointer-events-none" />
       <div className="relative max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-[13px] font-semibold text-cyan-400 mb-3 tracking-wide uppercase">Features</p>
+        <div className="text-center mb-20">
+          <p className="text-[13px] font-semibold text-cyan-400 mb-4 tracking-wide uppercase">Features</p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">Everything you need to pick smarter</h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (
-            <div key={f.title} className={`fade-up delay-${i+1} card p-6 group`}>
-              <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform duration-200">{f.icon}</span>
-              <h3 className="text-[15px] font-semibold text-zinc-100 mb-2">{f.title}</h3>
+            <div key={f.title} className={`fade-up delay-${i+1} card p-7 group flex flex-col`}>
+              <span className="text-3xl block mb-4 group-hover:scale-110 transition-transform duration-200">{f.icon}</span>
+              <h3 className="text-[15px] font-semibold text-zinc-100 mb-2.5">{f.title}</h3>
               <p className="text-[13px] text-zinc-500 leading-relaxed">{f.desc}</p>
             </div>
           ))}
