@@ -158,7 +158,24 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-              <span className="text-cyan-500 text-sm font-mono">09</span> Third-Party Links
+              <span className="text-cyan-500 text-sm font-mono">09</span> International Data Transfers
+            </h2>
+            <p>
+              Our Service is operated from the United States. If you access the Service from outside the US, 
+              your information may be transferred to, stored, and processed in the United States or other 
+              countries where our service providers operate.
+            </p>
+            <ul className="list-disc pl-5 space-y-2 mt-3">
+              <li>By using the Service, you consent to the transfer of your information to the United States and other jurisdictions.</li>
+              <li>We rely on <strong className="text-white">Standard Contractual Clauses (SCCs)</strong> and service provider agreements to ensure adequate data protection for EU/EEA data transfers.</li>
+              <li>Stripe, our payment processor, is certified under the EU-US Data Privacy Framework.</li>
+              <li>If you are in the EU/EEA, you may have the right to lodge a complaint with your local data protection authority.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+              <span className="text-cyan-500 text-sm font-mono">10</span> Third-Party Links
             </h2>
             <p>
               The Service may contain links to third-party websites (sportsbooks, Stripe, social media). 
@@ -169,7 +186,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-              <span className="text-cyan-500 text-sm font-mono">10</span> Changes to This Policy
+              <span className="text-cyan-500 text-sm font-mono">11</span> Changes to This Policy
             </h2>
             <p>
               We may update this Privacy Policy from time to time. Changes will be posted on this page with 
@@ -180,7 +197,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-              <span className="text-cyan-500 text-sm font-mono">11</span> Contact Us
+              <span className="text-cyan-500 text-sm font-mono">12</span> Contact Us
             </h2>
             <p>For privacy-related questions or to exercise your data rights:</p>
             <ul className="list-disc pl-5 space-y-2 mt-3">
