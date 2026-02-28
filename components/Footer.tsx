@@ -21,11 +21,12 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-6">
             {[
+              { label: "Terms of Service", href: "/terms" },
               { label: "Twitter", href: "https://x.com/AIParlayPicksTG" },
               { label: "Reddit", href: "https://reddit.com/u/AIParlayPicksTG" },
               { label: "Discord", href: "#" },
               { label: "Telegram", href: BOT },
-            ].map(l => <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="text-[12px] text-zinc-600 hover:text-zinc-300 transition-colors">{l.label}</a>)}
+            ].map(l => <a key={l.label} href={l.href} target={l.href.startsWith("/") ? undefined : "_blank"} rel={l.href.startsWith("/") ? undefined : "noopener noreferrer"} className="text-[12px] text-zinc-600 hover:text-zinc-300 transition-colors">{l.label}</a>)}
           </div>
         </div>
       </div>
