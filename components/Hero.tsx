@@ -1,154 +1,122 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
 
 const BOT_URL = "https://t.me/ParlayPicksBot";
 
-function AnimatedGrid() {
-  return (
-    <div className="absolute inset-0 grid-bg opacity-60" />
-  );
-}
-
-function FloatingOrbs() {
-  return (
-    <>
-      <div
-        className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 blur-3xl"
-        style={{ background: "radial-gradient(circle, #7C3AED, transparent)" }}
-      />
-      <div
-        className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full opacity-10 blur-3xl"
-        style={{ background: "radial-gradient(circle, #25F4EE, transparent)" }}
-      />
-      <div
-        className="absolute top-1/2 right-1/3 w-64 h-64 rounded-full opacity-8 blur-3xl"
-        style={{ background: "radial-gradient(circle, #FE2C55, transparent)" }}
-      />
-    </>
-  );
-}
-
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0f] via-[#0d0a1a] to-[#0a0a0f]" />
-      <AnimatedGrid />
-      <FloatingOrbs />
+    <section className="relative min-h-[92vh] flex items-center pt-14">
+      {/* Subtle top glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyan-500/[0.04] blur-[120px] rounded-full pointer-events-none" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Badge */}
+      <div className="relative max-w-3xl mx-auto px-5 text-center">
+        {/* Status pill */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#25F4EE]/30 bg-[#25F4EE]/5 text-[#25F4EE] text-sm font-medium mb-8"
+          transition={{ duration: 0.4 }}
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.08] bg-white/[0.03] text-xs text-zinc-400 mb-8"
         >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25F4EE] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#25F4EE]" />
-          </span>
-          Live on Telegram · Free to Start
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          Live — processing picks right now
         </motion.div>
 
-        {/* Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight mb-6"
-        >
-          AI-Powered Parlay Picks
-          <br />
-          <span className="gradient-text">That Actually Win</span>
-        </motion.h1>
-
-        {/* Subheadline */}
-        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl text-white/60 max-w-3xl mx-auto mb-10 leading-relaxed"
+          transition={{ duration: 0.5, delay: 0.05 }}
+          className="text-[2.75rem] sm:text-[3.5rem] md:text-[4.25rem] font-bold tracking-[-0.035em] leading-[1.08] text-white mb-5"
         >
-          Real-time odds from{" "}
-          <span className="text-[#25F4EE] font-semibold">40+ bookmakers</span>.{" "}
-          <span className="text-[#7C3AED] font-semibold">Claude AI</span> analysis.{" "}
-          Delivered straight to your{" "}
-          <span className="text-[#FE2C55] font-semibold">Telegram</span>.
+          Sports picks powered
+          <br />
+          by real-time AI
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-base sm:text-lg text-zinc-500 max-w-xl mx-auto mb-10 leading-relaxed"
+        >
+          Live odds from 40+ bookmakers. AI analysis of injuries, matchups, and
+          line movement. Delivered to your Telegram in seconds.
         </motion.p>
 
         {/* CTAs */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-3"
         >
           <a
             href={BOT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative px-8 py-4 rounded-full text-base sm:text-lg font-bold text-black bg-[#25F4EE] hover:bg-[#25F4EE]/90 transition-all duration-300 glow-cyan hover:scale-105"
+            className="px-6 py-2.5 rounded-lg text-sm font-medium text-[#09090b] bg-white hover:bg-zinc-200 transition-colors accent-glow"
           >
-            <span className="relative z-10">🎯 Get Free Picks</span>
+            Start for free →
           </a>
           <a
             href="#how-it-works"
-            className="px-8 py-4 rounded-full text-base sm:text-lg font-semibold text-white/70 border border-white/15 hover:border-white/30 hover:text-white transition-all duration-300 hover:bg-white/5"
+            className="px-6 py-2.5 rounded-lg text-sm font-medium text-zinc-400 border border-white/[0.08] hover:border-white/[0.16] hover:text-zinc-200 transition-all"
           >
-            See Today&apos;s Picks ↓
+            See how it works
           </a>
         </motion.div>
 
-        {/* Trust indicators */}
+        {/* Trust */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-14 flex flex-wrap items-center justify-center gap-6 text-white/40 text-sm"
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="mt-14 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[12px] text-zinc-600"
         >
-          <span className="flex items-center gap-1.5">✓ No credit card required</span>
-          <span className="hidden sm:inline text-white/20">•</span>
-          <span className="flex items-center gap-1.5">✓ Free tier always available</span>
-          <span className="hidden sm:inline text-white/20">•</span>
-          <span className="flex items-center gap-1.5">✓ Instant delivery</span>
+          <span>No credit card required</span>
+          <span className="text-zinc-800">·</span>
+          <span>Cancel anytime</span>
+          <span className="text-zinc-800">·</span>
+          <span>Free tier always available</span>
         </motion.div>
 
-        {/* Mock Telegram preview card */}
+        {/* Bot preview card */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
           className="mt-16 max-w-sm mx-auto"
         >
-          <div className="glass-card rounded-2xl p-4 text-left border border-[#25F4EE]/10">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#25F4EE] to-[#7C3AED] flex items-center justify-center text-sm font-bold text-black">🎯</div>
+          <div className="subtle-card p-4 text-left">
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-7 h-7 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-[11px]">
+                🎯
+              </div>
               <div>
-                <p className="text-xs font-semibold text-white">AI Parlay Picks Bot</p>
-                <p className="text-[10px] text-[#25F4EE]">● Online</p>
+                <p className="text-[12px] font-medium text-zinc-300">Parlay Picks Bot</p>
+                <p className="text-[10px] text-emerald-500">online</p>
+              </div>
+              <span className="ml-auto text-[10px] text-zinc-700">just now</span>
+            </div>
+            <div className="bg-white/[0.02] border border-white/[0.05] rounded-lg p-3 text-[12px] space-y-1.5 font-mono">
+              <p className="text-zinc-300 font-sans font-medium text-[11px] mb-2">Smart Parlay — 3 legs · Medium Risk</p>
+              <p className="text-zinc-500">
+                <span className="text-cyan-400">1.</span> Celtics -3.5 <span className="text-zinc-600">@ -110</span>
+              </p>
+              <p className="text-zinc-500">
+                <span className="text-cyan-400">2.</span> Chiefs ML <span className="text-zinc-600">@ -145</span>
+              </p>
+              <p className="text-zinc-500">
+                <span className="text-cyan-400">3.</span> Over 215.5 (LAL/GSW) <span className="text-zinc-600">@ -108</span>
+              </p>
+              <div className="mt-2.5 pt-2 border-t border-white/[0.05] flex justify-between text-[11px]">
+                <span className="text-zinc-400">+412 combined</span>
+                <span className="text-emerald-400 font-medium">$10 → $51.20</span>
               </div>
             </div>
-            <div className="bg-[#1a1a2e] rounded-xl p-3 text-xs space-y-1.5">
-              <p className="text-white font-semibold">🎯 Today&apos;s Smart Parlay</p>
-              <p className="text-white/60">NFL: Chiefs -3.5 ✓</p>
-              <p className="text-white/60">NBA: Lakers ML ✓</p>
-              <p className="text-white/60">NHL: Bruins O5.5 ✓</p>
-              <div className="mt-2 pt-2 border-t border-white/10 flex justify-between">
-                <span className="text-[#25F4EE] font-bold">+EV Parlay</span>
-                <span className="text-[#FE2C55] font-bold">+$247 potential</span>
-              </div>
-            </div>
-            <p className="text-[10px] text-white/30 mt-2 text-center">Confidence: 78% · Low Risk · 3-leg parlay</p>
           </div>
         </motion.div>
       </div>
-
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0f] to-transparent" />
     </section>
   );
 }
