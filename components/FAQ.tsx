@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const faqs = [
-  { q: "Is this legal?", a: "Yes. We provide analysis and recommendations — not betting services. Think of it like a sports analyst you subscribe to. Legal in all 50 US states." },
+  { q: "Is this legal?", a: "We provide AI-powered sports analysis and recommendations — not betting services. Think of it like a sports analyst you subscribe to. This is an entertainment and informational service. Check your local laws to confirm eligibility." },
   { q: "How does the AI generate picks?", a: "We use Claude AI for sports analysis, Perplexity for real-time injury/news data, and The Odds API for live odds from 40+ bookmakers." },
   { q: "What sports do you cover?", a: "NFL, NBA, MLB, NHL, Soccer, Tennis, College Football, and College Basketball. Premium and VIP get all 8." },
   { q: "Can I cancel anytime?", a: "Yes. Subscriptions run through Stripe — cancel from Telegram or your Stripe portal. You keep access through the end of your billing period." },

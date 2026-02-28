@@ -80,9 +80,9 @@ export default function Hero() {
 
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex-1 h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                  <div className="h-full w-[68%] bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-full" />
+                  <div className="h-full w-[62%] bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-full" />
                 </div>
-                <span className="text-[11px] text-zinc-500 flex-shrink-0">68% confidence</span>
+                <span className="text-[11px] text-zinc-500 flex-shrink-0">AI confidence score</span>
               </div>
 
               <div className="flex gap-2">

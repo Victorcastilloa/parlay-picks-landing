@@ -8,13 +8,13 @@ const Check = () => (
 
 const plans = [
   { name: "Free", price: "$0", period: "forever", desc: "Try the bot risk-free",
-    features: ["1 pick every 4 hours", "Basic AI analysis", "NFL & NBA", "Standard confidence scores"],
+    features: ["2 picks per day", "Basic AI analysis", "Random parlays (up to 3 legs)", "Standard confidence scores"],
     cta: "Start free", highlight: false },
   { name: "Premium", price: "$4.99", period: "/month", desc: "For serious bettors",
-    features: ["Unlimited daily picks", "/smart parlay command", "All 8 sports", "Full AI analysis + reasoning", "Risk level selection", "Payout calculator"],
+    features: ["8 picks per day", "/smart AI parlay command", "/quick live game bets", "All sports covered", "Full AI analysis + reasoning", "Risk level selection"],
     cta: "Go Premium", highlight: true },
   { name: "VIP", price: "$14.99", period: "/month", desc: "Maximum edge",
-    features: ["Everything in Premium", "Custom on-demand picks", "Priority queue access", "Early line alerts", "Direct analyst access"],
+    features: ["Everything in Premium", "Unlimited daily picks", "Custom on-demand parlays", "Up to 10-leg parlays", "Priority support", "Quick bet every 2 hours"],
     cta: "Go VIP", highlight: false },
 ];
 
