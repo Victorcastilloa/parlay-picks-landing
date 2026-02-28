@@ -35,7 +35,7 @@ function Counter({ target, prefix, suffix, active }: { target: number; prefix?: 
 
 export default function Stats() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-40px" });
+  const inView = useInView(ref, { once: true, amount: 0.05 });
 
   return (
     <section className="py-14 border-y border-white/[0.04] relative overflow-hidden">

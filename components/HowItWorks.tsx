@@ -32,7 +32,7 @@ const steps = [
 
 export default function HowItWorks() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id="how-it-works" className="py-24 sm:py-32">

@@ -38,7 +38,7 @@ const features = [
 
 export default function Features() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id="features" className="py-24 sm:py-32 relative">

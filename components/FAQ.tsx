@@ -70,7 +70,7 @@ function Item({ faq, i }: { faq: (typeof faqs)[0]; i: number }) {
 
 export default function FAQ() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id="faq" className="py-24 sm:py-32">

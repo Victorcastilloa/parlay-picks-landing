@@ -83,3 +83,9 @@ body {
   background: rgba(6, 182, 212, 0.25);
   color: #fafafa;
 }
+
+/* Fallback: if JS hasn't loaded, show everything */
+@media (scripting: none) {
+  * { opacity: 1 !important; transform: none !important; }
+}
+

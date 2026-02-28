@@ -37,7 +37,7 @@ const plans = [
 
 export default function Pricing() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id="pricing" className="py-24 sm:py-32">

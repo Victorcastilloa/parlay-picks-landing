@@ -7,7 +7,7 @@ const BOT_URL = "https://t.me/ParlayPicksBot";
 
 export default function Footer() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <footer className="relative">
