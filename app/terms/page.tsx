@@ -61,6 +61,34 @@ export default function TermsPage() {
             </ul>
           </section>
 
+          {/* 2.1 */}
+          <section>
+            <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+              <span className="text-cyan-500 text-sm font-mono">02.1</span> Restricted Jurisdictions
+            </h2>
+            <div className="card p-5 border-red-500/20 bg-red-500/[0.03] mb-4">
+              <p className="text-red-200/90 text-sm font-medium">🚫 The Service is NOT available to residents of the following jurisdictions.</p>
+            </div>
+            <p>
+              By using the Service, you represent and warrant that you are <strong className="text-white">not located in, 
+              a resident of, or accessing the Service from</strong> any of the following restricted jurisdictions:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 mt-3">
+              <li><strong className="text-white">United States — Restricted States:</strong> Idaho (ID), Utah (UT), Wisconsin (WI), Alabama (AL), Alaska (AK), Georgia (GA), Hawaii (HI), South Carolina (SC), Texas (TX), Minnesota (MN), Missouri (MO), Oklahoma (OK), California (CA)</li>
+              <li><strong className="text-white">Any other jurisdiction</strong> where sports wagering, sports analysis services, or receiving sports betting information is prohibited by local, state, or federal law.</li>
+            </ul>
+            <p className="mt-3">
+              This list may be updated at any time as laws and regulations change. It is <strong className="text-white">your sole responsibility</strong> to 
+              determine whether using this Service is legal in your jurisdiction. We make no representation that the Service 
+              is appropriate or available for use in any particular location.
+            </p>
+            <p className="mt-3">
+              If you access the Service from a restricted jurisdiction, you do so at your own risk and are solely responsible 
+              for compliance with local laws. We reserve the right to <strong className="text-white">terminate accounts and withhold refunds</strong> for 
+              users found to be accessing the Service from restricted jurisdictions.
+            </p>
+          </section>
+
           {/* 3 */}
           <section>
             <h2 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
