@@ -84,8 +84,11 @@ body {
   color: #fafafa;
 }
 
-/* Fallback: if JS hasn't loaded, show everything */
-@media (scripting: none) {
-  * { opacity: 1 !important; transform: none !important; }
+/* Ensure framer-motion elements are visible even before JS hydration */
+[style*="opacity: 0"], [style*="opacity:0"] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 
