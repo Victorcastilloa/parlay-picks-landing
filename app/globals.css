@@ -9,7 +9,9 @@
   --accent-light: #22d3ee;
 }
 
-* { box-sizing: border-box; padding: 0; margin: 0; }
+/* Tailwind v4 @layer base already resets box-sizing/margin/padding.
+   An unlayered * {} reset overrides @layer utilities (mx-auto, px-6, etc.)
+   causing alignment/centering to break. Removed. */
 
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 
