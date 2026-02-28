@@ -74,7 +74,7 @@ export default function TermsPage() {
               a resident of, or accessing the Service from</strong> any of the following restricted jurisdictions:
             </p>
             <ul className="list-disc pl-5 space-y-2 mt-3">
-              <li><strong className="text-white">United States — Restricted States:</strong> Idaho (ID), Utah (UT), Wisconsin (WI), Alabama (AL), Alaska (AK), Georgia (GA), Hawaii (HI), South Carolina (SC), Texas (TX), Minnesota (MN), Missouri (MO), Oklahoma (OK), California (CA)</li>
+              <li><strong className="text-white">United States — Restricted States:</strong> Nevada (NV), Idaho (ID), Utah (UT), Wisconsin (WI), Alabama (AL), Alaska (AK), Georgia (GA), Hawaii (HI), South Carolina (SC), Texas (TX), Minnesota (MN), Missouri (MO), Oklahoma (OK), California (CA)</li>
               <li><strong className="text-white">Any other jurisdiction</strong> where sports wagering, sports analysis services, or receiving sports betting information is prohibited by local, state, or federal law.</li>
             </ul>
             <p className="mt-3">
