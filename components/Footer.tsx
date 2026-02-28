@@ -21,7 +21,8 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-6">
             {[
-              { label: "Terms of Service", href: "/terms" },
+              { label: "Terms", href: "/terms" },
+              { label: "Privacy", href: "/privacy" },
               { label: "Twitter", href: "https://x.com/AIParlayPicksTG" },
               { label: "Reddit", href: "https://reddit.com/u/AIParlayPicksTG" },
               { label: "Discord", href: "#" },

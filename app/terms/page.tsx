@@ -148,17 +148,17 @@ export default function TermsPage() {
               <span className="text-cyan-500 text-sm font-mono">05.2</span> Chargebacks &amp; Payment Disputes
             </h2>
             <div className="card p-5 border-red-500/20 bg-red-500/[0.03] mb-4">
-              <p className="text-red-200/90 text-sm font-medium">🚫 FILING A CHARGEBACK IS A VIOLATION OF THESE TERMS</p>
+              <p className="text-red-200/90 text-sm font-medium">🚫 PLEASE CONTACT US BEFORE INITIATING A PAYMENT DISPUTE</p>
             </div>
             <ul className="list-disc pl-5 space-y-2">
-              <li>You agree <strong className="text-white">not to file a chargeback, payment dispute, or payment reversal</strong> with your bank, credit card company, or payment provider for any charges from AI Parlay Picks.</li>
+              <li>You agree to <strong className="text-white">contact us first</strong> before initiating any chargeback, payment dispute, or payment reversal with your bank, credit card company, or payment provider for any charges from AI Parlay Picks.</li>
               <li>If you have a billing concern, you agree to <strong className="text-white">contact us first</strong> through our support bot (@parlaypickssupportbot) before taking any action with your payment provider. We commit to responding within 48 hours.</li>
               <li>In the event a chargeback or dispute is filed:
                 <ul className="list-disc pl-5 space-y-1.5 mt-2 text-zinc-400">
                   <li>Your account will be <strong className="text-white">immediately and permanently terminated</strong>.</li>
                   <li>All access to paid features will be revoked without prior notice.</li>
                   <li>We will submit evidence to contest the dispute, including: your acceptance of these Terms (with timestamp), your usage logs, your IP address, your Telegram account information, delivery confirmation of the Service, and all communications.</li>
-                  <li>You may be liable for an additional <strong className="text-white">administrative fee of $25.00</strong> to cover dispute processing costs, which will be charged to your payment method on file or invoiced separately.</li>
+                  <li>You may be liable for <strong className="text-white">reasonable administrative costs</strong> incurred in responding to the dispute, which may be invoiced separately.</li>
                   <li>We reserve the right to pursue collections and/or legal action for fraudulent chargebacks.</li>
                   <li>Your information may be shared with chargeback fraud prevention databases.</li>
                 </ul>
@@ -303,6 +303,9 @@ export default function TermsPage() {
               <li>If informal resolution fails, disputes shall be resolved through <strong className="text-white">binding arbitration</strong> in accordance with the rules of the American Arbitration Association (AAA).</li>
               <li>Arbitration shall take place in the State of New Jersey, United States.</li>
               <li>You waive any right to participate in a class action lawsuit or class-wide arbitration against AI Parlay Picks.</li>
+              <li><strong className="text-white">Small Claims Exception:</strong> Either party may bring an individual action in small claims court if the claim qualifies.</li>
+              <li><strong className="text-white">Opt-Out Right:</strong> You may opt out of the arbitration agreement by sending written notice to our support bot within 30 days of first accepting these Terms. If you opt out, disputes will be resolved in the courts of New Jersey.</li>
+              <li><strong className="text-white">Fee Allocation:</strong> Each party shall bear its own costs of arbitration. Filing fees shall be split equally unless the arbitrator determines otherwise.</li>
               <li>These Terms are governed by and construed in accordance with the laws of the <strong className="text-white">State of New Jersey</strong>, without regard to its conflict of law principles.</li>
             </ul>
           </section>
