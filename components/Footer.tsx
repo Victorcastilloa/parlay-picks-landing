@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/[0.03] to-transparent pointer-events-none" />
           <div className="relative">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">Ready to pick smarter?</h2>
-            <p className="text-sm text-zinc-500 mb-8 max-w-md mx-auto">Join bettors who use AI-powered analysis to find +EV parlays. Start free, upgrade when you see results.</p>
+            <p className="text-sm text-zinc-500 mb-8 max-w-md mx-auto">Join bettors who use AI-powered analysis to find +EV parlays. Start free. Founding member pricing available for a limited time.</p>
             <a href={BOT} target="_blank" rel="noopener noreferrer" className="btn-primary inline-block px-8 py-3 rounded-lg text-sm">Get started for free →</a>
           </div>
         </div>
@@ -17,7 +17,9 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2.5">
             <div className="w-6 h-6 rounded-md bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center text-white text-[10px] font-bold">A</div>
-            <span className="text-[12px] text-zinc-600">© 2026 AI Parlay Picks · Not financial advice · 18+</span>
+            <span className="text-[12px] text-zinc-600">© 2026 AI Parlay Picks · Not financial advice · 21+ · For entertainment only</span>
+            <p className="text-[10px] text-zinc-700 mt-1">Record methodology: 1 parlay = 1 bet. Multi-leg parlays count as single bets. Past performance does not guarantee future results.</p>
+            <p className="text-[10px] text-zinc-700">Problem gambling? Call 1-800-522-4700 or visit <a href="https://www.ncpgambling.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-400">ncpgambling.org</a></p>
           </div>
           <div className="flex items-center gap-6">
             {[
